@@ -284,11 +284,13 @@ body {
 
 /* For Phones */
 @media (max-width: 480px) {
-    
+
     .contact-btn, .cv-btn {
-        margin: 10px;
         display: block;
+        width: 80%;
+        margin: 10px auto;
     }
+    
     body {
         padding: 10px; /* Less padding on small screens */
     }
