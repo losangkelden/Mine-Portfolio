@@ -284,6 +284,11 @@ body {
 
 /* For Phones */
 @media (max-width: 480px) {
+    
+    .contact-btn, .cv-btn {
+        margin: 10px;
+        display: block;
+    }
     body {
         padding: 10px; /* Less padding on small screens */
     }
