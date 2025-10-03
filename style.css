@@ -262,6 +262,316 @@ body {
     }
 }
 
+/* ===== DOCUMENTARY & MUSIC SECTIONS ===== */
+
+.feature-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.feature-section h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Documentary Section */
+.documentary-content, .music-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.video-container video {
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+
+.documentary-info, .music-info {
+    flex: 1;
+}
+
+.documentary-info h3, .music-info h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.credits {
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Music Section */
+.music-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.highlight-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #9b59b6; /* Purple for creativity */
+}
+
+.highlight-item h4 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+.performance-visual {
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 250px;
+}
+
+.placeholder-concert p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.spotify-btn {
+    display: inline-block;
+    background-color: #1DB954;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.spotify-btn:hover {
+    background-color: #1ed760;
+    transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .documentary-content, .music-content {
+        gap: 30px;
+    }
+    
+    .video-container video {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .feature-section {
+        padding: 30px 20px;
+    }
+    
+    .documentary-content, .music-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    
+    .video-container video {
+        width: 100%;
+        max-width: 400px;
+        height: 250px;
+    }
+    
+    .performance-visual {
+        min-width: auto;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .music-highlights {
+        gap: 15px;
+    }
+}
+.organization-logo {
+    background: linear-gradient(135deg, #e74c3c, #c0392b); /* Red gradient */
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.org-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.org-desc {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.organization-note {
+    background-color: #ffeaa7;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.spotify-stats {
+    background-color: #2d3436;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.spotify-stats p {
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+.cooking-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.cooking-video video {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.cooking-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.detail-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #e67e22; /* Orange accent for food */
+}
+
+.detail-item h4 {
+    margin: 0 0 8px 0;
+    color: #2c3e50;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .cooking-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cooking-video video {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+.music-simple {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.music-text {
+    flex: 1;
+}
+
+.concert-photo-simple {
+    flex: 1;
+    text-align: center;
+}
+
+.concert-photo-simple img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.photo-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.highlight {
+    margin: 20px 0;
+}
+
+.highlight h4 {
+    margin: 0 0 8px 0;
+    color: #2c3e50;
+}
+
+.featured-concert img {
+    max-width: 100%;  /* Never wider than container */
+    height: auto;     /* Keep proportions */
+    border-radius: 10px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .music-simple {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .concert-photo-simple img {
+        max-width: 300px;
+    }
+}
+
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .feature-section {
+        padding: 25px 15px;
+    }
+    
+    .feature-section h2 {
+        font-size: 1.7em;
+        margin-bottom: 20px;
+    }
+    
+    .video-container video {
+        height: 200px;
+    }
+    
+    .highlight-item {
+        padding: 15px;
+    }
+    
+    .spotify-btn {
+        padding: 12px 25px;
+        font-size: 0.9em;
+    }
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* For Tablets */
@@ -282,6 +592,15 @@ body {
     }
 }
 
+.privacy-note {
+    background-color: #e8f4f8;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: #2c3e50;
+    border-left: 3px solid #3498db;
+}
+
 /* For Phones */
 @media (max-width: 480px) {
 
@@ -290,7 +609,7 @@ body {
         width: 80%;
         margin: 10px auto;
     }
-    
+
     body {
         padding: 10px; /* Less padding on small screens */
     }
