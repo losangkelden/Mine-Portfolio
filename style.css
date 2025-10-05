@@ -12,6 +12,35 @@ body {
     line-height: 1.6;
 }
 
+/* ===== UTILITY CLASSES ===== */
+.privacy-note {
+    background-color: #e8f4f8;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: #2c3e50;
+    border-left: 3px solid #3498db;
+}
+
+.organization-note {
+    background-color: #ffeaa7;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.certificate-badge {
+    background-color: #27ae60;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
 /* ===== MAIN CONTENT CONTAINER ===== */
 #Main {
     max-width: 1000px;
@@ -150,16 +179,6 @@ body {
     line-height: 1.5;
 }
 
-.certificate-badge {
-    background-color: #27ae60;
-    color: white;
-    padding: 2px 8px;
-    border-radius: 12px;
-    font-size: 0.75em;
-    font-weight: bold;
-    margin-left: 8px;
-}
-
 /* ===== PROJECT SECTION ===== */
 #project {
     background-color: white;
@@ -171,14 +190,38 @@ body {
     text-align: center;
 }
 
+.project-simple {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.project-text h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.project-text p {
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
 .project-link {
     display: inline-block;
     background-color: #2c3e50;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.project-link:hover {
+    background-color: #3498db;
+    transform: translateY(-2px);
 }
 
 /* ===== ADDITIONAL BACKGROUND SECTION ===== */
@@ -205,7 +248,7 @@ body {
     text-align: center;
 }
 
-/* ===== FEATURE SECTIONS (Documentary, Music, Cooking) ===== */
+/* ===== FEATURE SECTIONS ===== */
 .feature-section {
     background-color: white;
     padding: 40px;
@@ -222,8 +265,8 @@ body {
     font-size: 2em;
 }
 
-/* Documentary & Music Layout */
-.documentary-content, .music-content, .cooking-content {
+/* Documentary Section */
+.documentary-content {
     display: flex;
     gap: 40px;
     align-items: center;
@@ -234,11 +277,11 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.documentary-info, .music-info, .cooking-info {
+.documentary-info {
     flex: 1;
 }
 
-.documentary-info h3, .music-info h3, .cooking-info h3 {
+.documentary-info h3 {
     color: #2c3e50;
     margin-bottom: 15px;
     font-size: 1.5em;
@@ -251,7 +294,7 @@ body {
     margin-top: 10px;
 }
 
-/* Music Specific Styles */
+/* Music Section */
 .music-simple {
     display: flex;
     gap: 40px;
@@ -297,7 +340,6 @@ body {
     color: #2c3e50;
 }
 
-/* Organization & Performance Visuals */
 .performance-visual {
     background: linear-gradient(135deg, #8e44ad, #3498db);
     color: white;
@@ -340,7 +382,23 @@ body {
     font-size: 1em;
 }
 
-/* Cooking Specific Styles */
+/* Cooking Section */
+.cooking-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.cooking-info {
+    flex: 1;
+}
+
+.cooking-info h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
 .cooking-details {
     display: flex;
     flex-direction: column;
@@ -451,7 +509,7 @@ body {
     color: #2c3e50;
 }
 
-/* Simple navigation menu */
+/* ===== NAVIGATION ===== */
 .nav-menu {
     position: fixed;
     top: 20px;
@@ -472,6 +530,7 @@ body {
 .nav-menu a:hover {
     background: #f0f0f0;
 }
+
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Tablets */
@@ -521,6 +580,52 @@ body {
     .concert-photo-simple img {
         max-width: 300px;
     }
+    
+    /* Project Section Mobile */
+    #project {
+        padding: 30px 20px;
+    }
+    
+    .project-text h3 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+    
+    .project-text p {
+        font-size: 1em;
+        margin-bottom: 12px;
+        line-height: 1.5;
+    }
+    
+    .project-link {
+        padding: 12px 25px;
+        font-size: 1em;
+        margin-top: 20px;
+    }
+    
+    /* Additional Background Mobile */
+    #additional {
+        padding: 30px 20px;
+    }
+    
+    .additional-simple {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .simple-item {
+        padding: 15px;
+    }
+    
+    .simple-item h4 {
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+    
+    .simple-item p {
+        font-size: 0.9em;
+        line-height: 1.4;
+    }
 }
 
 /* Phones */
@@ -563,6 +668,28 @@ body {
         width: 80%;
         margin: 10px auto;
     }
+    
+    /* Project & Additional Mobile */
+    #project {
+        padding: 25px 15px;
+    }
+    
+    #additional {
+        padding: 25px 15px;
+    }
+    
+    .project-text h3 {
+        font-size: 1.3em;
+    }
+    
+    .project-link {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+    
+    .simple-item {
+        padding: 12px;
+    }
 }
 
 /* Very Small Phones */
@@ -571,23 +698,4 @@ body {
         width: 150px;
         height: 150px;
     }
-}
-
-/* Utility Classes */
-.privacy-note {
-    background-color: #e8f4f8;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-size: 0.9em;
-    color: #2c3e50;
-    border-left: 3px solid #3498db;
-}
-
-.organization-note {
-    background-color: #ffeaa7;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-size: 0.9em;
-    margin-top: 10px;
-    display: inline-block;
 }
