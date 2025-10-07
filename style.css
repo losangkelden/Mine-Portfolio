@@ -65,7 +65,7 @@ body {
 
 #video-section video {
     width: 250px;
-    height: 250px;
+    height: 320px;
     object-fit: cover;
     border-radius: 8px;
     background-color: #e0e0e0;
